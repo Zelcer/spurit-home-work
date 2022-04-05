@@ -1,9 +1,11 @@
+[**Страница проекта**](https://zelcer.github.io/spurit-home-work/)
+
 # Задание
 
 ## Файлы
 
-[**Макет:**](https://www.figma.com/file/LPx4g3g72aeXdvgj2uFdjd/SpurIT---HTML%2FCSS%2FJS%2FA11Y?node-id=0%3A1)
-[**Шрифты:**](https://disk.yandex.ru/d/Xb3IJ496XwXHmA)
+[**Макет**](https://www.figma.com/file/LPx4g3g72aeXdvgj2uFdjd/SpurIT---HTML%2FCSS%2FJS%2FA11Y?node-id=0%3A1)
+[**Шрифты**](https://disk.yandex.ru/d/Xb3IJ496XwXHmA)
 
 ## Что сделать
 
