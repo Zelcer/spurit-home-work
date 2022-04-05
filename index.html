@@ -17,7 +17,8 @@
     <header class="main-header">
       <div class="main-header__container container">
         <nav class="main-nav">
-          <ul class="main-nav__list" role="list">
+          <span id="listTitleMain" class="v-h" aria-hidden="true">Main navigation</span>
+          <ul class="main-nav__list" role="list" aria-labelledby="listTitleMain">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Women</a>
             </li>
@@ -41,7 +42,8 @@
               role="img"
             />
           </a>
-          <ul class="main-nav__list" role="list">
+          <span id="listTitleUser" class="v-h" aria-hidden="true">User navigation</span>
+          <ul class="main-nav__list" role="list" aria-labelledby="listTitleUser">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Account</a>
             </li>
@@ -60,7 +62,7 @@
       </div>
     </header>
     <main id="main" class="page-main" tabindex="-1">
-      <div class="breadcrumbs">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="breadcrumbs__container container">
           <ul class="breadcrumbs__list" role="list">
             <li class="breadcrumbs__item">
@@ -74,7 +76,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
       <section class="product-detal" aria-labelledby="productLabel">
         <div class="product-detal__container container">
           <div class="product-detal__gallery">
