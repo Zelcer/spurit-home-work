@@ -175,18 +175,9 @@ img {
 }
 
 .breadcrumbs__item:not(.breadcrumbs__item:last-child) {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-right: 5px;
-  padding-right: 12px;
-}
-
-.breadcrumbs__item::after {
-  content: "/";
-  position: absolute;
-  top: 2px;
-  right: 0;
-  font-size: 14px;
-  color: #929499;
 }
 
 .breadcrumbs__item:last-child::after {
@@ -195,6 +186,7 @@ img {
 
 .breadcrumbs__link {
   display: block;
+  margin-right: 5px;
   padding: 4px;
   font: inherit;
   font-size: 12px;
@@ -208,6 +200,11 @@ img {
 }
 
 .breadcrumbs__link--current {
+  color: #929499;
+}
+
+.breadcrumbs__separator {
+  font-size: 14px;
   color: #929499;
 }
 
