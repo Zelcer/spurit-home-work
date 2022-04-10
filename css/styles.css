@@ -138,6 +138,18 @@ img {
   .burger-btn,
   .close-btn {
     display: block;
+    stroke: #1A1F29;
+  }
+
+  .burger-btn:hover,
+  .close-btn:hover {
+    stroke: var(--accent-color);
+  }
+
+  .burger-btn:focus-visible,
+  .close-btn:focus-visible {
+    outline: var(--custom-outline);
+    outline-offset: 3px;
   }
 
   .burger-btn {
@@ -256,6 +268,11 @@ img {
 
   .main-nav__link-svg {
     display: block;
+    stroke: var(--basic-black);
+  }
+
+  .main-nav__link:hover .main-nav__link-svg {
+    stroke: var(--accent-color);
   }
 
   .main-nav__logo {
