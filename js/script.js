@@ -19,9 +19,9 @@ const closeMenuBtn = document.querySelector('.close-btn');
 burgerMenuBtn.addEventListener('click', () => {
   let expanded = burgerMenuBtn.getAttribute('aria-expanded') === 'true';
   burgerMenuBtn.setAttribute('aria-expanded', !expanded);
-  sideMenu.style.display = "block";
+  sideMenu.classList.add('main-nav__list-wrap--show');
 });
 
 closeMenuBtn.addEventListener('click', () => {
-  sideMenu.style.display = "none";
+  sideMenu.classList.remove('main-nav__list-wrap--show');
 });
