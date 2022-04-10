@@ -153,6 +153,8 @@ img {
 .main-nav__link:hover,
 .main-nav__link:focus {
   color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
 }
 
 /* Breadcrumbs */
@@ -197,6 +199,8 @@ img {
 .breadcrumbs__link:hover:not(.breadcrumbs__link--current:hover),
 .breadcrumbs__link:focus:not(.breadcrumbs__link--current:focus) {
   color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
 }
 
 .breadcrumbs__link--current {
@@ -809,6 +813,8 @@ img {
 .main-footer__link:hover,
 .main-footer__link:focus {
   color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
 }
 
 .main-footer__copyright {
