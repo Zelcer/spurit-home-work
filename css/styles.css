@@ -756,6 +756,10 @@ img {
   border: 1px solid var(--basic-grey);
 }
 
+.color-options__item--small .color-options__tooltip {
+  left: 10px;
+}
+
 .color-options__label:hover + .color-options__tooltip,
 .color-options__radio:focus ~ .color-options__tooltip {
   display: block;
