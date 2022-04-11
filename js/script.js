@@ -34,23 +34,29 @@
   const focusableContent = sideMenu.querySelectorAll(focusableElements);
   const lastFocusableElement = focusableContent[focusableContent.length - 1];
 
-  document.addEventListener('keydown', (evt) => {
-    let isTabPressed = evt.key === 'Tab' || evt.keyCode === 9;
-    if (!isTabPressed) {
-      return;
-    }
-    if (evt.shiftKey) {
-      if (document.activeElement === firstFocusableElement) {
-        lastFocusableElement.focus();
-        evt.preventDefault();
-      }
-    } else {
-      if (document.activeElement === lastFocusableElement) {
+  document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('resize', () => {
+      if (window.matchMedia('(max-width: 1024px)').matches) {
+        document.addEventListener('keydown', (evt) => {
+          let isTabPressed = evt.key === 'Tab' || evt.keyCode === 9;
+          if (!isTabPressed) {
+            return;
+          }
+          if (evt.shiftKey) {
+            if (document.activeElement === firstFocusableElement) {
+              lastFocusableElement.focus();
+              evt.preventDefault();
+            }
+          } else {
+            if (document.activeElement === lastFocusableElement) {
+              firstFocusableElement.focus();
+              evt.preventDefault();
+            }
+          }
+        });
+      
         firstFocusableElement.focus();
-        evt.preventDefault();
       }
-    }
+    });
   });
-
-  firstFocusableElement.focus();
 })();
