@@ -21,6 +21,17 @@
     url("../fonts/AvenirNextRoundedStd-Reg.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Avenir Next Rounded Std";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Avenir Next Rounded Std Medium"),
+    local("Avenir-Next-Rounded-Std-Medium"),
+    url("../fonts/AvenirNextRoundedStd-Med.woff2") format("woff2"),
+    url("../fonts/AvenirNextRoundedStd-Med.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -840,6 +851,10 @@ img {
 
 .collaps__btn::after {
   transform: translateY(-50%) rotate(90deg);
+}
+
+.collaps__btn--open {
+  font-weight: 700;
 }
 
 .collaps__btn--open::before {
