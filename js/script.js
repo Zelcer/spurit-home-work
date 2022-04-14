@@ -9,7 +9,7 @@
       let expanded = collapseBtn.getAttribute('aria-expanded') === 'true';
       collapseBtn.setAttribute('aria-expanded', !expanded);
       collapseBtn.classList.toggle('collaps__btn--open');
-      target.classList.toggle('collaps__desc--show'); 
+      target.classList.toggle('collaps__desc--show');
     });
   });
 })();
