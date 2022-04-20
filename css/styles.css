@@ -258,18 +258,18 @@ img {
 
   .main-nav__list-wrap {
     position: absolute;
-    left: 0;
+    left: -370px;
     top: 0;
-    display: none;
     width: 350px;
     height: 100vh;
     padding-top: 20px;
     background-color: var(--basic-white);
     box-shadow: 0 0 10px 0 var(--basic-grey);
+    transition: left var(--animate);
   }
 
   .main-nav__list-wrap--show {
-    display: block;
+    left: 0;
   }
 
   .main-nav__list {
