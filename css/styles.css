@@ -1082,6 +1082,7 @@ img {
 .main-footer__text {
   margin: 0;
   margin-bottom: 16px;
+  font-style: normal;
   line-height: 2;
   color: var(--dark-grey);
 }

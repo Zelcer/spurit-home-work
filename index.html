@@ -48,16 +48,9 @@
             </button>
           </div>
           <a class="main-nav__logo main-logo" href="#">
-            <img
-              class="main-logo__img"
-              src="img/svg/main-logo.svg"
-              width="139"
-              height="32"
-              alt="Go to main page."
-              role="img"
-            />
+            <img class="main-logo__img" src="img/svg/main-logo.svg" width="139" height="32" alt="Go to main page." />
           </a>
-          <span id="listTitleUser" class="v-h" aria-hidden="true">User navigation</span>
+          <span id="listTitleUser" class="v-h" aria-hidden="true">User</span>
           <ul class="main-nav__list main-nav__list--user" role="list" aria-labelledby="listTitleUser">
             <li class="main-nav__item main-nav__item--account">
               <a class="main-nav__link" href="#" aria-labelledby="navAccauntLabel" title="Account">
@@ -94,7 +87,7 @@
     <main id="main" class="page-main" tabindex="-1">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="breadcrumbs__container container">
-          <ul class="breadcrumbs__list" role="list">
+          <ol class="breadcrumbs__list" role="list">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Home</a>
               <span class="breadcrumbs__separator" aria-hidden="true">/</span>
@@ -106,7 +99,7 @@
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page">White unisex t-shirt</a>
             </li>
-          </ul>
+          </ol>
         </div>
       </nav>
       <section class="product-detal" aria-labelledby="productLabel">
@@ -294,8 +287,14 @@
                 </div>
               </fieldset>
               <div class="product-form__btns">
-                <button class="product-form__btn btn-reset" type="submit">Add to cart</button>
-                <button class="product-form__btn product-form__btn--accent btn-reset" type="submit">Buy it now</button>
+                <button class="product-form__btn btn-reset" type="submit">
+                  Add to cart
+                  <span class="v-h">White unisex t-shirt</span>
+                </button>
+                <button class="product-form__btn product-form__btn--accent btn-reset" type="submit">
+                  Buy it now
+                  <span class="v-h">White unisex t-shirt</span>
+                </button>
               </div>
             </form>
             <p class="product-detal__text">
@@ -699,11 +698,11 @@
             <div class="main-footer__item">
               <dt class="main-footer__caption">About</dt>
               <dd class="main-footer__info">
-                <p class="main-footer__text">
+                <address class="main-footer__text">
                   Susparsa Store
                   <br />
                   Geneva, Switzerland
-                </p>
+                </address>
                 <span id="listTitleSocial" class="v-h" aria-hidden="true">Social media</span>
                 <ul class="main-footer__socials socials" role="list" aria-labelledby="listTitleSocial">
                   <li class="socials__item">
