@@ -18,8 +18,8 @@
 (function () {
   const body = document.querySelector('body');
   const burgerMenuBtn = document.querySelector('.burger-btn');
-  const sideMenu = document.querySelector('.main-nav__list-wrap');
-  const sideMenuLinks = sideMenu.querySelectorAll('.main-nav__link');
+  const sideMenu = document.querySelector('.mobile-menu');
+  const sideMenuLinks = sideMenu.querySelectorAll('.mobile-menu__link');
   const closeMenuBtn = sideMenu.querySelector('.close-btn');
 
   let isPageHasScroll = window.innerWidth > document.body.offsetWidth;
@@ -81,14 +81,14 @@
   burgerMenuBtn.addEventListener('click', () => {
     let expanded = burgerMenuBtn.getAttribute('aria-expanded') === 'true';
     burgerMenuBtn.setAttribute('aria-expanded', !expanded);
-    sideMenu.classList.add('main-nav__list-wrap--show');
+    sideMenu.classList.add('mobile-menu--show');
     body.classList.add('scroll-lock');
     showMenu();
     saveScrollPosition();
   });
 
   closeMenuBtn.addEventListener('click', () => {
-    sideMenu.classList.remove('main-nav__list-wrap--show');
+    sideMenu.classList.remove('mobile-menu--show');
     body.classList.remove('scroll-lock');
     hideMenu();
     returnScrollPosition();
@@ -123,6 +123,6 @@
         }
     });
   }
-  const sideMenu = document.querySelector('.main-nav__list-wrap');
+  const sideMenu = document.querySelector('.mobile-menu');
   trapFocus(sideMenu);
 })();

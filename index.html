@@ -22,8 +22,33 @@
               <use xlink:href="img/svg/sprite.svg#burger-icon"></use>
             </svg>
           </button>
+          <div class="main-nav__mobile-menu mobile-menu">
+            <span id="listTitleMainMobile" class="v-h">Main sections</span>
+            <ul class="mobile-menu__list" role="list" aria-labelledby="listTitleMainMobile">
+              <li class="mobile-menu__item">
+                <a class="main-nav__link mobile-menu__link" href="#">Women</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="main-nav__link mobile-menu__link" href="#">Men</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="main-nav__link mobile-menu__link" href="#">Kids</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="main-nav__link mobile-menu__link" href="#">Company</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="main-nav__link mobile-menu__link" href="#">Account</a>
+              </li>
+            </ul>
+            <button class="btn-reset close-btn" type="button" aria-label="Close menu">
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use xlink:href="img/svg/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+          </div>
           <div class="main-nav__list-wrap">
-            <span id="listTitleMain" class="v-h" aria-hidden="true">Main sections</span>
+            <span id="listTitleMain" class="v-h">Main sections</span>
             <ul class="main-nav__list main-nav__list--main" role="list" aria-labelledby="listTitleMain">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Women</a>
@@ -37,15 +62,7 @@
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Company</a>
               </li>
-              <li class="main-nav__item main-nav__item--mobile">
-                <a class="main-nav__link" href="#">Account</a>
-              </li>
             </ul>
-            <button class="btn-reset close-btn" type="button" aria-label="Close menu">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use xlink:href="img/svg/sprite.svg#close-icon"></use>
-              </svg>
-            </button>
           </div>
           <a class="main-nav__logo main-logo" href="#">
             <img class="main-logo__img" src="img/svg/main-logo.svg" width="139" height="32" alt="Go to main page." />
@@ -273,7 +290,9 @@
               <fieldset class="product-form__group product-form__group--quantity">
                 <legend class="product-form__caption">Quantity</legend>
                 <div class="counter">
-                  <button class="counter__btn btn-reset" type="button" aria-label="decrease quantity by 1">−</button>
+                  <button class="counter__btn btn-reset" type="button" aria-label="decrease quantity by 1">
+                    &minus;
+                  </button>
                   <input
                     class="counter__input"
                     type="text"
